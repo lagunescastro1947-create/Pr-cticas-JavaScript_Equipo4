@@ -3,20 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ejercicio 13 - DOM b&aacute;sico y atributos HTML</title>
+<script src="../scripts/script16.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-
-var contador=3;
-
-function anade() {
-
-  var lista = document.getElementById("lista");
-  var elemento = document.createElement("li");
-  var nuevoElemento = "<li>Elemento "+(++contador)+"</li>";
-  lista.innerHTML = lista.innerHTML + nuevoElemento;
-}
-
-</script>
 </head>
 
 <body>
@@ -28,6 +16,8 @@ function anade() {
 </ul>
 
 <input type="button" value="Añadir elemento" onclick="anade();">
-
+<div class="inicio">
+        <a href="../index.html"> <img src="../img/home.png" alt="" height="32"/> Inicio</a> 
+    </div>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
 	<title>Dynamic style: Manipulating CSS with JavaScript Examples - Accessing Style Sheets Example </title>
   <script type="text/javascript" src="" charset="UTF-8"></script>
+  
   <body>
 	<h1>
 		Estilo din&aacute;mico: Manipulaci&oacute;n de CSS con JavaScript
@@ -18,6 +19,7 @@
 		<div id='e1' class="example">
 			N&uacute;mero de estilo: <span id="numOfStyleSheets"></span>
 		</div>
+                <script src="../scripts/script19.js" type="text/javascript"></script>
     <div>
 		      <div class="code_css">
 			           <h4>C&oacute;digo CSS </h4>
@@ -66,40 +68,16 @@
               		= document.styleSheets.length;
               }
               			</pre>
-			<script>
-			var e1_toggle = true;
-			function toggleStyleSheet() {
-				var node = document.getElementById('e1_style');
-				node.parentNode.removeChild(node);
-				var sheet = document.createElement('style')
-				sheet.id = 'e1_style';
-				if(e1_toggle)
-					sheet.innerHTML = "#e1 {border: 2px solid black; background-color: blue;}";
-				else
-					sheet.innerHTML = "#e1 {font-weight: bold; font-size: 115%; color: green;}";
-
-				document.body.appendChild(sheet);
-				e1_toggle = ! e1_toggle;
-				updateNumberOfStyleSheets();
-			}
-			function updateNumberOfStyleSheets(){
-				document.getElementById('numOfStyleSheets').innerHTML = document.styleSheets.length;
-			}
-			</script>
+			
 		</div>
 
-		<script>
-			function addOnClick(el, func) {
-				if(el.addEventListener) {
-					el.addEventListener('click', func, false);
-				} else {
-					el.attachEvent('onclick', func);
-				}
-			}
-			addOnClick(document.getElementById('tss'), toggleStyleSheet);
-		</script>
+		
 	</div>
+                <div class="inicio">
+        <a href="../index.html"> <img src="../img/home.png" alt="" height="32"/> Inicio</a> 
+    </div>
 </body>
+
 <script>
 	updateNumberOfStyleSheets();
 </script>

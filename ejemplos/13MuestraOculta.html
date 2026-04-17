@@ -2,22 +2,8 @@
 <html>
 <head>
 	<title>Ejercicio 14 - DOM básico Muetra y Oculta atributos HTML</title>
-
-	<script type="text/javascript">
-	function muestraOculta(id) {
-	  var elemento = document.getElementById('contenidos_'+id);
-	  var enlace = document.getElementById('enlace_'+id);
-
-	  if(elemento.style.display == "" || elemento.style.display == "block") {
-	           elemento.style.display = "none";
-	    enlace.innerHTML = 'Mostrar contenidos';
-	  }
-	  else {
-	    elemento.style.display = "block";
-	    enlace.innerHTML = 'Ocultar contenidos';
-	  }
-	}
-	</script>
+        <script src="../scripts/script13.js" type="text/javascript"></script>
+	
 	</head>
 
 	<body>
@@ -33,6 +19,8 @@
 	<br/>
 	<p id="contenidos_3">[3] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
 	<a id="enlace_3" href="#" onclick="muestraOculta('3'); return false;">Ocultar contenidos</a>
-
+        <div class="inicio">
+        <a href="../index.html"> <img src="../img/home.png" alt="" height="32"/> Inicio</a> 
+    </div>
 	</body>
 	</html>
