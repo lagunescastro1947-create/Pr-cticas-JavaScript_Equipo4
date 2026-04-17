@@ -1,0 +1,91 @@
+                body{
+                    background-color: #F1F0EA;
+                    margin: 0;
+                }
+                    
+                table {
+                    border-collapse: collapse;
+                    width: 80%;
+                    margin: auto;
+                }
+                th, td {
+                    border: 1px solid #3c5233;
+                    padding: 8px;
+                    text-align: center;
+                    background-color: #E0DDCF;
+                    color: #3C5233;
+                }
+                th {
+                    background-color: #3C5233;
+                    color: #E0DDCF;
+                }
+                    
+                h2{
+                    color: #2E3F27;
+                }
+                    
+                header {
+                    background-color: #2E3F27;
+                    text-align: center;
+                    color: #E0DDCF;
+                    padding: 1em;
+                    color: #EAF1E4;
+                    clear: left;
+                    overflow: hidden;
+                }
+                
+                /* Espaciado superior para la tabla con respecto al header */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 16px auto 0 auto; /* 16px arriba, auto a los lados, 0 abajo */
+}
+
+/* Estilo para los hipervínculos dentro de la tabla */
+td a {
+    color: #3C5233; /* El verde oscuro que ya usas en el texto de las celdas */
+    text-decoration: none; /* Quita el subrayado azul por defecto */
+    font-weight: bold;    /* Opcional: para que resalten un poco más */
+    display: flex;        /* Ayuda a alinear la imagen y el texto */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;             /* Espacio entre el icono y el texto */
+}
+
+/* Efecto al pasar el mouse por encima (hover) */
+td a:hover {
+    color: #2E3F27;       /* Un verde un poco más oscuro al pasar el mouse */
+    text-decoration: underline; /* Aparece el subrayado al señalar */
+}
+
+/* Contenedor principal de integrantes */
+div.integrantes {
+    width: 60%;          /* Ancho un poco más angosto que la tabla para que resalte */
+    margin: 30px auto;   /* Centrado horizontal y margen vertical de 30px */
+    text-align: center;  /* Centra el título h3 */
+    padding: 20px;
+    background-color: #E0DDCF; /* Fondo crema usado en la tabla */
+    border: 2px solid #3C5233;  /* Borde verde oscuro */
+    border-radius: 8px;         /* Esquinas ligeramente redondeadas */
+}
+
+/* Estilo para el título de la sección */
+div.integrantes h3 {
+    color: #2E3F27;      /* Verde oscuro */
+    margin-top: 0;
+    border-bottom: 1px solid #3C5233;
+    padding-bottom: 10px;
+}
+
+/* Estilo para la lista ordenada */
+div.integrantes ol {
+    display: inline-block; /* Permite que la lista se centre como bloque */
+    text-align: left;      /* Alinea los nombres a la izquierda dentro del bloque centrado */
+    color: #3C5233;        /* Texto en color verde */
+    font-weight: bold;
+    padding-left: 40px;    /* Espacio para los números de la lista */
+}
+
+div.integrantes li {
+    margin-bottom: 8px;    /* Espaciado entre integrantes */
+}
