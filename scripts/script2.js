@@ -1,2 +1,2 @@
-var mesaje = "Hola mundo! \n Que facil es incluir \'comillas simples\' \n y \comillas dobles\"";
+var mensaje = "Hola mundo! \n Que facil es incluir \'comillas simples\' \n y \comillas dobles\"";
 alert(mensaje);
